@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personalized Marketing & Customer Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #003366;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+      background: white;
+      margin: 20px;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #004080;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #004080;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Personalized Marketing & Customer Service</h1>
+</header>
+
+<nav>
+  <a href="#marketing">Marketing</a>
+  <a href="#service">Customer Service</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="marketing">
+  <h2>Personalized Marketing</h2>
+  <p>We use data-driven strategies to create targeted campaigns tailored to each customer's preferences. Our personalized marketing increases engagement, loyalty, and conversions by delivering the right message at the right time.</p>
+</section>
+
+<section id="service">
+  <h2>Customer Service</h2>
+  <p>Our customer service team uses personalization to provide efficient, friendly, and relevant support. By understanding customer history and preferences, we ensure every interaction is meaningful and satisfying.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="/submit-form" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+</section>
+
+</body>
+</html>
