@@ -4,7 +4,9 @@ COLLEGE CODE : 1125
 COLLEGE NAME : Sri Venkateswara Institute of Science and Technology, Tiruvallur
 DEPARTMENT : CSE,CSE(Cyber Security),CSE,CSE,AI&DS
 
-STUDENT NM-ID : e47d7c744a82b52bea74fa4549ec05e5
+STUDENT NM-ID : 
+
+                e47d7c744a82b52bea74fa4549ec05e5
                 e465596f0af825e99f44d6ca155c83d3 
                 b6e95e95d19b8ce8c4740d2f4f5f249b 
                 8a6e787d3fa24d0897a48d36100ff7d3 
