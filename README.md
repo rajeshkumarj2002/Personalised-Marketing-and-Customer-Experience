@@ -18,12 +18,8 @@ ROLL NO :
               112523104301
               112523243302
 
-DATE : 15/05/2025
-
-AI - PERSONALISED MARKETING AND CUSTOMER EXPERIENCE
-
-SUBMITTED BY
-            ASWIN R
+SUBMITTED BY,
+           ASWIN R
 
            MUKESH VARMA N
 
@@ -32,163 +28,138 @@ SUBMITTED BY
            SARATHY B
 
           PARVEEN KUMAR G
- 
-# Personalised-Marketing-and-Customer-Experience
 
-This project is a **Flask-based web application** that demonstrates how **data-driven personalization** can improve customer engagement through tailored messaging and insights. It utilizes **customer segmentation**, **purchase behavior**, and **device analytics** to enhance the user journey.
+DATE : 15/05/2025
+
+AI - PERSONALISED MARKETING AND CUSTOMER EXPERIENCE
+
+1. Project Demonstration
+
+Overview
+
+The AI-Powered Personalized Marketing and Customer Experience system will be demonstrated to stakeholders, showcasing its features, performance improvements, and functionality. This demonstration highlights the system’s targeted marketing capabilities, real-time data analysis, security measures, and performance scalability.
+
+Demonstration Details
+
+System Walkthrough: A live walkthrough of the platform, from user interaction to the output, showcasing how the AI analyzes customer data to deliver personalized marketing content. AI Speed: The demonstration will show how the AI model provides fast responses and actions based on user interactions and marketing data.
+
+Data Integration: Real-time analysis of customer interactions will be demonstrated, highlighting how marketing strategies are adapted based on user behavior.
+Performance Metrics: Response time, system scalability, and load handling under multiple user interactions will be highlighted to show improved system capacity.
+Security & Privacy: Encryption protocols and privacy measures will be explained and demonstrated as the system handles user data.
+
+Outcome
+
+By the end of the demonstration, the system’s ability to handle real-world scenarios, ensure data security, and deliver targeted marketing content will be showcased to the stakeholders.
+
+Project Documentation Overview
+
+Comprehensive documentation for the AI-Powered Personalized Marketing and Customer Experience system is provided to detail every aspect of the project. This includes system architecture, AI model details, code explanations, and usage guidelines for both users and administrators.
+
+Documentation Sections
+
+System Architecture :Diagrams illustrating the complete system, including AI algorithms, data processing workflows, and customer interaction modules.
+Code Documentation: Source code and explanations for all code modules, including AI training scripts, API integrations, and marketing content delivery mechanisms.
+User Guide: A manual for marketing managers and users, explaining how to interact with the system, analyze customer data, and generate targeted marketing campaigns. Administrator Guide: Instructions for system maintenance, monitoring, and performance testing procedures.
+Testing Reports: Detailed reports on performance metrics, load testing, and data security evaluations.
+
+Outcome
+
+All critical components of the system will be well-documented, providing a clear guide for future development, deployment, or system scaling.
+
+Personalized Marketing & Customer Service
+
+This project demonstrates how to enhance the customer experience using personalized marketing and customer service strategies. It consists of a Python Flask backend and a modern HTML frontend. The system adapts responses and insights based on customer engagement data and behavior.
 
 ---
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [How It Works](#how-it-works)
-- [Tech Stack](#tech-stack)
-- [Code Explanation](#code-explanation)
-- [Running the Project](#running-the-project)
-- [Key Points](#key-points)
-- [Screenshot Preview](#screenshot-preview)
-- [License](#license)
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Key Features](#key-features)
+- [Python Backend Explanation](#python-backend-explanation)
+- [HTML Frontend Explanation](#html-frontend-explanation)
+- [How to Run the Project](#how-to-run-the-project)
+
+## Project Overview
+
+This system enables personalized user experiences using basic customer data like purchase history, email engagement, and device info. It tailors responses to the user and logs device-related data to help improve marketing strategies.
 
 ---
 
-## Overview
+## Technologies Used
 
-The project simulates a marketing portal that identifies customer status based on:
-- Purchase history
-- Engagement (email opens)
-- Recency (last purchase date)
-- Device info logging
-
-The UI is responsive and informative, giving users personalized feedback and analyzing the devices they use to visit the platform.
+- Python 3
+- Flask (Web Framework)
+- Pandas (Data Handling)
+- HTML5 & CSS3
+- Bootstrap (via CDN)
 
 ---
 
-## Features
+## Key Features
 
-- **Customer Classification**:
-  - *New Customer*
-  - *Low Engagement*
-  - *Churn Risk*
-  - *Healthy Customer*
-- **Personalized Messaging** for each customer type.
-- **Device Detection**:
-  - Type (Phone, Tablet, Desktop)
-  - Screen Size
-  - Device Memory
-- **Logs Device Info** into a CSV file for backend analytics.
-- **Bootstrap 5 UI** for a modern look and mobile responsiveness.
+### Backend
+- Customer segmentation based on behavior
+- Email and purchase frequency analysis
+- Device info logging to CSV
+- Dynamic message generation
+
+### Frontend
+- Informative, responsive webpage
+- Simple form to capture user details
+- Device information auto-detection via JavaScript
 
 ---
 
-## How It Works
+## Python Backend Explanation
 
-1. User opens the site.
-2. JS script detects device specs and logs them to the backend.
-3. User fills out the form with their name and email.
-4. Backend matches the email with a sample customer database and determines:
-   - Engagement score
-   - Purchase frequency
-   - Time since last purchase
-5. Returns a customized message and status.
+### 1. `get_customer_status(email)`
+- Identifies user type:
+  - New Customer
+  - Low Engagement
+  - Churn Risk
+  - Healthy
+- Returns a message based on segmentation logic using customer database.
 
----
+### 2. `/submit-form`
+- Accepts `POST` request from the HTML form.
+- Returns a personalized thank you page with status and message.
+  
+### 3. `/log-device`
+- Receives device info (screen size, memory, user agent) via JS.
+- Appends it to `device_logs.csv` for analysis.
 
-## Tech Stack
-
-- **Frontend**:
-  - HTML5, Bootstrap 5
-  - JavaScript for device detection
-- **Backend**:
-  - Python 3
-  - Flask (Web framework)
-  - Pandas (Customer database & logging)
+### 4. `/`
+- Renders the homepage (HTML UI) using `return` string.
 
 ---
 
-## Code Explanation
+## HTML Frontend Explanation
 
-### 1. **Customer Database (`customer_db`)**
+### Sections:
+- **Header**: Title and navigation links
+- **Marketing Section**: Describes data-driven marketing
+- **Customer Service Section**: Highlights personalization in support
+- **Contact Section**: Contains a form to collect user name, email, and message
 
-Stores mock data of existing customers including:
-- Email
-- Name
-- Last Purchase Date
-- Frequency
-- Total Spend
-- Email Opens
-
-### 2. **Customer Status Function**
-
-Checks:
-- Whether the email exists
-- Email opens < 3 and frequency < 2 → **Low Engagement**
-- Recent activity > 30 days and high spend → **Churn Risk**
-- Default → **Healthy**
-
-Returns a status and a personalized message.
-
-### 3. **Device Logging API**
-
-Logs:
-- Screen size
-- Device type
-- Memory
-- Timestamp
-
-Saved into `device_logs.csv` for future analytics.
-
-### 4. **Frontend Home Page**
-
-- Responsive layout using Bootstrap
-- Displays the project purpose
-- Detects device info using `navigator` APIs in JavaScript
-- Sends a POST request to `/log-device` endpoint
-
-### 5. **Form Submission**
-
-- Gets user name, email, and message
-- Uses the `get_customer_status()` function
-- Displays results in a clean, styled HTML page
+### Styles:
+- Uses simple CSS for layout, responsive design, and color theming.
+- Clean and modern look with rounded sections and interactive form.
 
 ---
 
-## Running the Project
+## How to Run the Project
 
-### 1. **Install Dependencies**
-```bash
-pip install flask pandas
-```
+1. **Install Dependencies**
+   ```bash
+   pip install flask pandas
+   ```
 
-### 2. **Run the Flask App**
-```bash
-python app.py
-```
+2. **Run the App**
+   ```bash
+   python app.py
+   ```
 
-### 3. **Open in Browser**
-```
-http://127.0.0.1:5000/
-```
-
----
-
-## Key Points
-
-- Simulates real-world marketing intelligence with personalization.
-- Demonstrates customer segmentation logic using Python.
-- Highlights how device info can be used for optimizing UX.
-- Easily extendable to a full CRM or marketing dashboard.
-- Ideal for academic projects focused on digital marketing + AI.
-
----
-
-## Screenshot Preview
-
-*You can add a screenshot of the web page or form submission output here.*
-
----
-
-## License
-
-This project is for educational and demonstration purposes. You can freely modify and expand it for learning, portfolio, or academic use.
+3. **Open in Browser**
+   Visit: `http://localhost:5000`
