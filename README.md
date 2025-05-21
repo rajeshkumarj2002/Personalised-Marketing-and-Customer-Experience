@@ -1,3 +1,38 @@
+#NAAN MUDHALVAN - IBM
+
+COLLEGE CODE : 1125
+COLLEGE NAME : Sri Venkateswara Institute of Science and Technology, Tiruvallur
+DEPARTMENT : CSE,CSE(Cyber Security),CSE,CSE,AI&DS
+
+STUDENT NM-ID : e47d7c744a82b52bea74fa4549ec05e5
+                e465596f0af825e99f44d6ca155c83d3 
+                b6e95e95d19b8ce8c4740d2f4f5f249b 
+                8a6e787d3fa24d0897a48d36100ff7d3 
+                86e0117af78c5a7bb3f44e887f0bfadf
+
+ROLL NO :
+
+              112523104003
+              112523149002
+              112523104011
+              112523104301
+              112523243302
+
+DATE : 15/05/2025
+
+AI - PERSONALISED MARKETING AND CUSTOMER EXPERIENCE
+
+SUBMITTED BY
+            ASWIN R
+
+           MUKESH VARMA N
+
+           RAJESH KUMAR J
+
+           SARATHY B
+
+          PARVEEN KUMAR G
+ 
 # Personalised-Marketing-and-Customer-Experience
 
 This project is a **Flask-based web application** that demonstrates how **data-driven personalization** can improve customer engagement through tailored messaging and insights. It utilizes **customer segmentation**, **purchase behavior**, and **device analytics** to enhance the user journey.
